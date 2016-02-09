@@ -1,18 +1,39 @@
 import java.util.ArrayList;
 
+
 public class App {
+
+  public String numberRangeStr = "";
+
+  private String userInputStr = "";
+  private int userInputInt = 0;
+  private ArrayList<Integer> numberRangeInt = new ArrayList<Integer>();
+  private StringBuilder builder = new StringBuilder();
+
+
   public static void main(String[] args) {
-    ArrayList<String> numberRange = new ArrayList();
+    // App app = new App(String[0]);
   }
 
-  public App(int userInput) {
-    this.userInput = userInput;
-    ArrayList<Integer> numberRange = new ArrayList();
-  }
+  // public App(String userInputStr) {
+  //   userInputString = userInputStr;
+  //   userInputInt = Integer.parseInt(userInputString);
+  // }
 
-  public void setNumberRange(Integer userInput) {
-    // ArrayList<String> numberRange = new ArrayList<String>();
-    // return false;
+  public void getNumberRange(String userInputStr) {
+    // App app = new App(userInputStr);
+    userInputInt = Integer.parseInt(userInputStr);
+
+    for (int i = 0; i < userInputInt; i++) {
+      if (!(i == (userInputInt - 1))){
+        builder.append((i + 1) + " ");
+      } else {
+        builder.append(i + 1);
+      }
+    }
+
+    numberRangeStr = builder.toString();
+    System.out.println(numberRangeStr);
   }
 
 }
