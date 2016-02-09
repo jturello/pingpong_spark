@@ -24,16 +24,16 @@ public class App {
     // App app = new App(userInputStr);
     userInputInt = Integer.parseInt(userInputStr);
 
-    for (int i = 0; i < userInputInt; i++) {
-      if (!(i == (userInputInt - 1))){
-        builder.append((i + 1) + " ");
+    for (int i = 1; i <= userInputInt; i++) {
+      if (i % 3 == 0) {
+        builder.append("ping ");
       } else {
-        builder.append(i + 1);
+        builder.append(i + " ");
       }
     }
+    //remove final appended superfluous space on builder
+    builder.deleteCharAt(builder.length() - 1);
 
     numberRangeStr = builder.toString();
-    System.out.println(numberRangeStr);
   }
-
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-02-09T01:21:55" hostname="epicodus-41.local" time="0.001">
+<testsuite name="AppTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-02-09T01:55:03" hostname="epicodus-41.local" time="0.002">
   <properties/>
-  <testcase name="getNumberRange_forUserInputs2_returnString_1_2" classname="AppTest" time="0.001"/>
-  <system-out><![CDATA[1 2
-]]></system-out>
+  <testcase name="getNumberRange_forUserEnters3_returnString_1_2_ping" classname="AppTest" time="0.001"/>
+  <testcase name="getNumberRange_forUserEnters2_returnString_1_2" classname="AppTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
