@@ -16,4 +16,11 @@ public class AppTest {
     app.getNumberRange("3");
     assertEquals("1 2 ping", app.numberRangeStr);
   }
+
+  @Test
+  public void getNumberRange_forUserEnters5_returnString_1_2_ping_4_pong() {
+    App app = new App();
+    app.getNumberRange("5");
+    assertEquals("1 2 ping 4 pong", app.numberRangeStr);
+  }
 }
