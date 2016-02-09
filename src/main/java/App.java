@@ -25,13 +25,15 @@ public class App {
     userInputInt = Integer.parseInt(userInputStr);
 
     for (int i = 1; i <= userInputInt; i++) {
-      if (i % 5 == 0) {
-        builder.append("pong ");
-      } else if (i % 3 == 0) {
-        builder.append("ping ");
-        } else {
-          builder.append(i + " ");
-        }
+      if (i % 15 == 0) {
+        builder.append("pingpong ");
+      } else if (i % 5 == 0) {
+          builder.append("pong ");
+          } else if (i % 3 == 0) {
+            builder.append("ping ");
+            } else {
+              builder.append(i + " ");
+              }
     }
     //remove final appended superfluous space on builder
     builder.deleteCharAt(builder.length() - 1);
